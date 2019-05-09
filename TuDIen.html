@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form id="form"></form>
+<script>
+    TiengAnh = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
+    TiengViet = ["một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín", "mười"];
+    Input = prompt(" nhập vào từ muốn tìm : ");
+    for (let i = 0; i < TiengAnh.length; i++) {
+        if (Input === TiengAnh[i]) {
+            document.getElementById("form").innerHTML = TiengViet[i];
+            break;
+        } else {
+            alert(" không tìm thấy từ này");
+            break;
+        }
+
+    }
+
+</script>
+</body>
+</html>
